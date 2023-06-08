@@ -133,11 +133,11 @@ const PhoneBook = () => {
     setCurrentPage((prevPage) => prevPage - 1);
   };
 
-  
+
 
   return (
     <>
-      <Box p="10px" display="flex" justifyContent="space-around">
+      <Box p="10px" display="flex" justifyContent="space-around" gap="10px">
         <Box>
           <Input
             onChange={(e) => handleSearchChange(e.target.value)}
@@ -150,7 +150,7 @@ const PhoneBook = () => {
             _placeholder={{ color: "gray.400" }}
           />
         </Box>
-        <Box display="flex" gap="20px">
+        <Box display="flex" gap="10px">
           <Button leftIcon={<FiFilter />} colorScheme="teal" variant="solid">
             Filter
           </Button>
