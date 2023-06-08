@@ -151,7 +151,7 @@ const PhoneBook = () => {
           />
         </Box>
         <Box display="flex" gap="10px">
-          <Button leftIcon={<FiFilter />} colorScheme="teal" variant="solid">
+          <Button pr="20px" leftIcon={<FiFilter />} colorScheme="teal" variant="solid">
             Filter
           </Button>
           <Select

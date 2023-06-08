@@ -28,18 +28,32 @@
 
 <br />
 
+## Add Contact
+
+<img src="contact-phonebook/src/assets/addContact.png">
+
+<br />
+
 ## Home Page
 
-<img src="visualization-dashboard/src/assets/Home.png">
-
+<img src="contact-phonebook/src/assets/phonebookHome.png">
 <br />
 
-## Dashboard Page
+## Contact Details 
 
-<img src="visualization-dashboard/src/assets/Dashboard
-.png">
-
+<img src="contact-phonebook/src/assets/userDetails.png">
 <br />
+
+## Edit Contact 
+
+<img src="contact-phonebook/src/assets/editContact.png">
+<br />
+
+## Bookmark Contact 
+
+<img src="contact-phonebook/src/assets/bookmark.png">
+<br />
+
 
 ## Getting Started
 
@@ -55,4 +69,4 @@
 
 ### Frontend
 
-https://blackcoffer-orignal.netlify.app/
+
