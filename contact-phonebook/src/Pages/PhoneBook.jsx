@@ -64,13 +64,13 @@ const PhoneBook = () => {
 
   const handleDelete = (id) => {
     dispatch(deleteContact(id));
-        toast({
-          title: "Contact deleted",
-          status: "success",
-          duration: 5000,
-          isClosable: true,
-          position: "top",
-        });
+    toast({
+      title: "Contact deleted",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+      position: "top",
+    });
   };
 
   const handleBookmark = (data) => {
@@ -80,7 +80,7 @@ const PhoneBook = () => {
       status: "success",
       duration: 5000,
       isClosable: true,
-      position:"top"
+      position: "top",
     });
   };
 
@@ -133,15 +133,13 @@ const PhoneBook = () => {
     setCurrentPage((prevPage) => prevPage - 1);
   };
 
-
-
   return (
     <>
       <Box p="10px" display="flex" justifyContent="space-around" gap="10px">
         <Box>
           <Input
             onChange={(e) => handleSearchChange(e.target.value)}
-            w={{base:"auto",md:"auto",lg:"25rem"}}
+            w={{ base: "auto", md: "auto", lg: "25rem" }}
             type="text"
             placeholder="Search..."
             mb={{ base: 2, md: 0 }}
@@ -151,7 +149,12 @@ const PhoneBook = () => {
           />
         </Box>
         <Box display="flex" gap="10px">
-          <Button pr="20px" leftIcon={<FiFilter />} colorScheme="teal" variant="solid">
+          <Button
+            pr="20px"
+            leftIcon={<FiFilter />}
+            colorScheme="teal"
+            variant="solid"
+          >
             Filter
           </Button>
           <Select
@@ -184,7 +187,11 @@ const PhoneBook = () => {
               <Tr key={el.id} boxShadow="base">
                 <Td>
                   <Box display="flex" alignItems="center" gap="20px">
-                    <Image w="5%" borderRadius="50%" src={el.avatar} />
+                    <Image
+                      w={{ base: "30%", md: "5%",sm:"10%", lg: "5%" }}
+                      borderRadius="50%"
+                      src={el.avatar}
+                    />
                     <Text
                       cursor="pointer"
                       _hover={{ color: "gray.500" }}
@@ -218,7 +225,7 @@ const PhoneBook = () => {
         </Tbody>
       </Table>
 
-      <Box w="200px" m="auto" mt="20px">
+      <Box w={{base:"150px",md:"200px",lg:"200px"}} m="auto" mt="20px">
         <ButtonGroup>
           <button
             style={{
